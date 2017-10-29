@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "Gagalin";
+    src: url("../Fonts/Gagalin-Regular.otf") format("otf"),
+    url("../Fonts/Gagalin-Regular.eot") format("eot"),
+    url("../Fonts/Gagalin-Regular.ttf") format("ttf"),
+    url("../Fonts/Gagalin-Regular.svg") format("svg"),
+    url("../Fonts/Gagalin-Regular.woff") format("woff");
+
+}
+
+@font-face{
+    font-family: "Ubuntu";
+    src: url("../Fonts/Ubuntu.eot") format("eot"),
+    url("../Fonts/Ubuntu.svg") format("svg"),
+    url("../Fonts/Ubuntu.ttf") format("ttf"),
+    url("../Fonts/Ubuntu.woff") format("woff");
+}
+
+@font-face {
+        font-family: "Ubuntu-Bold";
+       src: url("../Fonts/Ubuntu-Bold.eot") format("eot"),
+        url("../Fonts/Ubuntu-Bold.svg") format("svg"),
+        url("../Fonts/Ubuntu-Bold.ttf") format("ttf"),
+        url("../Fonts/Ubuntu-Bold.woff") format("woff");
+        
+    }
+   
+
+   @font-face {
+       font-family: "Ubuntu-Light";
+        src: url("../Fonts/Ubuntu-Light.eot") format("eot"),
+        url("../Fonts/Ubuntu-Light.svg") format("svg"),
+        url("../Fonts/Ubuntu-Light.ttf") format("ttf"),
+        url("../Fonts/Ubuntu-Light.woff") format("woff");
+   }
+
+   @font-face {
+       font-family: "Ubuntu-Medium";
+       src:  url("../Fonts/Ubuntu-Medium.eot") format("eot"),
+       url("../Fonts/Ubuntu-Medium.svg") format("svg"),
+       url("../Fonts/Ubuntu-Medium.ttf") format("ttf"),
+       url("../Fonts/Ubuntu-Medium.woff") format("woff"),
+       url("../Fonts/Ubuntu-Regular.ttf") format("ttf");;
+   }
+
+   @font-face {
+       font-family: "Lifehack-Medium";
+       src: url("./Fonts/Lifehack-Medium.eot") format("eot"),
+       url("../Fonts/Lifehack-Medium.svg") format("svg"),
+       url("../Fonts/Lifehack-Medium.ttf") format("ttf"),
+       url("../Fonts/Lifehack-Medium.woff") format("woff"),
+       url("../Fonts/Lifehack-Medium.ttf") format("ttf");
+   }
+
+
+
+
