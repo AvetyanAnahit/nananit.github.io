@@ -1,0 +1,43 @@
+
+.presentation{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15vh;
+  }
+  
+  .presentation-img {
+    background: url("../images/drops.png") 0 28px no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 451px;
+    height: 424px;
+    padding-bottom: 91px;
+   }
+  
+  
+  .presentation-text{
+    float: right;
+  }
+  .presentation-text__1{
+    font-family: Gagalin;
+    font-size: 72px;
+    color: #f9b43b;
+  }
+
+  .presentation-text__2{
+    font-family: "Lifehack-Medium";
+    font-size: 65px;
+    color: #ffffff;
+  }
+ 
+  .arrow{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+ 
+  
