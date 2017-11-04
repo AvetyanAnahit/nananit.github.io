@@ -1,0 +1,33 @@
+.carte{
+    background: url("../images/carte.png");
+    height: 100vh;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+
+.carte-accord{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carte-accord__description{
+    width: 0;
+    overflow: hidden;
+}
+
+.carte-accord__item .carte-accord__link{
+    display: block;
+    height: 100%;
+}
+
+.carte-accord__title{
+    transform: translate()
+}
