@@ -1,4 +1,37 @@
 .nav{
+    float: right;
+    margin-right: 45px;
+    margin-top: 89px;
+    color: #ffffff;
+}
+
+.nav-item__link::before{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+   
+}
+.nav-item{
+    list-style-type: none;
+    width: 6px;
+    height: 6px;
+    margin: 10px;
+}
+
+.nav-item__link:hover::before{
+    content: "";
+    position: absolute;
+    top: 176px;
+    right: 258px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+
     position: fixed;
     list-style-type: none;
     right: 50px;
