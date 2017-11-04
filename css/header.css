@@ -4,10 +4,16 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 2vh;
+ week_2
 }
 
 .logo {
     margin-right: 200px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
     width: 93px;
     height: 68px; }
 

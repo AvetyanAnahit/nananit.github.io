@@ -5,36 +5,63 @@
   align-items: center;
   justify-content: center;
   padding-top: 15vh;
+  width: 960px;
   }
   
   .presentation-img {
     background: url("../images/drops.png") 0 28px no-repeat;
     display: flex;
     justify-content: center;
+
     width: 451px;
     height: 424px;
     padding-bottom: 91px;
+    width: 475px;
+    height: 400px;
    }
   
   
   .presentation-text{
+
     float: right;
   }
   .presentation-text__1{
+
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 435px;
+     height: 100%;
+     margin: 0;
+  }
+  .presentation-text__1{
+    margin: 0;
+
     font-family: Gagalin;
     font-size: 72px;
     color: #f9b43b;
   }
 
   .presentation-text__2{
+
     font-family: "Lifehack-Medium";
     font-size: 65px;
     color: #ffffff;
+
+    margin: 0;
+    font-family: "Lifehack-Medium";
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 65px;
+
   }
  
   .arrow{
     margin: 0;
     position: absolute;
+
+    bottom: 0;
+
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
