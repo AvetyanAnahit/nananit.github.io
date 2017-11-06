@@ -163,7 +163,7 @@
             <h1 class="section__title">Меню</h1>
             <ul class="carte-accord">
                 <li class="carte-accord__item">
-                    <a href="" class="carte-accord__link" style=background-image:url(images/eater.png)>
+                    <a href="" class="carte-accord__link" style="background-image:url(images/eater.png)">
                         <span class="carte-accord__title">Для мясоедов</span>
                     </a>
                     <div class="carte-accord__description">
@@ -174,8 +174,8 @@
                     </div>
 
                 </li>
-                <li class="carte-accord__item">
-                    <a href="" class="carte-accord__link" style=background-image:url(images/Vegeterian.png)>
+                <li class="carte-accord__item carte-accord__item-active">
+                    <a href="" class="carte-accord__link " style="background-image:url(images/Vegeterian.png)">
                         <span class="carte-accord__title">Вегетарианское</span>
                     </a>
                     <div class="carte-accord__description">
@@ -187,7 +187,7 @@
     
                     </li>
                     <li class="carte-accord__item">
-                        <a href="" class="carte-accord__link" style=background-image:url(images/Dietic.png)>
+                        <a href="" class="carte-accord__link" style="background-image:url(images/Dietic.png)">
                             <span class="carte-accord__title">Диетическое</span>
                         </a>
                         <div class="carte-accord__description">
@@ -290,13 +290,104 @@
         </section>
 
         <!--here is form section-->
-        <section class="form">
+        <section class="section form">
+            <div class="container">
+                <h1 class="form__header">Закажите доставку</h1>
+                <form action class="form">
+                    <div class="form__group">
+                        <div class="form__column">
+                            <div class="form__row">
+                                <div class="form__block">
+                                    <label for="name" class="form__label">Имя</label>
+                                    <input type="text"  class="form__input">
+                                </div>
+                                <div class="form__block">
+                                    <label for="text" class="form__label">Телефон</label>
+                                    <input type="phone" class="form__input">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__block">
+                                    <label for="street" class="form__label">Улица</label>
+                                    <input type="text"  class="form__input">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__block">
+                                    <label for="house" class="form__label">Дом</label>
+                                    <input type="text"  class="form__input">
+                                </div>
+                                <div class="form__block">
+                                    <label for="house" class="form__label">Корпус</label>
+                                    <input type="text"  class="form__input">
+                                </div>
+                                <div class="form__block">
+                                    <label for="flat" class="form__label">Квартира</label>
+                                    <input type="text"  class="form__input">
+                                </div>
+                                <div class="form__block">
+                                    <label for="floor" class="form__label">Этаж</label>
+                                    <input type="text"  class="form__input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__column">
+                                <div class="form__row">
+                                    <div class="form__block">
+                                        <label for="message" class="form__label">Комментарий</label>
+                                        <textarea id="message" class="form__textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                <div class="form__block">
+                                    <input type="radio" name="payment" value="cash" id="cash" class="form__input_radio" checked="">
+                                    <label for="cash" class="form__label form__label_type_radio">Потребуется сдача</label>
+                                </div>
+                                <div class="form__block">
+                                    <input type="radio" name="payment" value="card" id="card" class="form__input_radio">
+                                    <label for="card" class="form__label form__label_type_radio">Оплата по карте</label>
+                                </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__block">
+                                        <input type="checkbox" name="not-call" value="not-call" id="not-call" class="form__input_checkbox" checked="">
+                                        <label for="not-call" class="form__label form__label_type_checkbox">Не перезванивать</label>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__block form__block_btn">
+                                        <input type="submit" class="order-button order-button_form" value="заказать">
+                                    </div>
+                                    <div class="form__block form__block_btn">
+                                        <input type="reset" class="form__reset" value="Очистить">
+                                    </div>
+                                </div>
+                </form>
+
+            </div>
 
         </section>
-        <!--here is map section-->
+        <!--here is map and footer section, don't forget about svg sprites!!!-->
         <section class="map">
             <div class="footer">
+                <div class="container container-footer">
+                   <div class="footer__column">
+                     <div class="contacts">
+                        <span class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
+                        <a href="tel:78123771377" class="contacts__phone">
+                                <span class="contacts__icon">
+                                    <img src="../images/phone.png" alt="">
+                                </span>
+                            +7 (812) 377-13-77
+                        </a>
+                     </div>
+                   </div>
+                   <div class="footer__column">
+                    <!--here is sprite,  created by gulp-->
+                   </div>
 
+                </div>
+                
             </div>
         </section>
    </div>
