@@ -8,9 +8,9 @@ gulp.task('default', function() {
 
 gulp.task('sass', function () {
  return gulp.src('scss/style.scss')
-   .pipe(sass().on('error', sass.logError))
+   .pipe(sass({includePaths: ['_/scss/']}).on('error',  sass.logError))
    .pipe(gulp.dest('./css'));
 });
 gulp.task('sass:watch', function () {
-    gulp.watch('scss/style.scss', ['sass']);
+    gulp.watch('scss/*.scss', ['sass']);
   });
