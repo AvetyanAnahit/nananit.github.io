@@ -161,6 +161,7 @@ a {
   min-height: 650px;
   background: url("../images/video-bg.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover; }
 
 .statement {
