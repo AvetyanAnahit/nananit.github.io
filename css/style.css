@@ -361,18 +361,18 @@ a {
 .carte {
   background: url("../images/carte.png");
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 650px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
 
 .section__title {
   position: absolute;
-  top: rem(100px);
-  left: ren(95px);
+  top: 100px;
+  left: 95px;
   margin: 0;
   font-family: Gagalin, sans-serif;
-  font-size: rem(72px);
+  font-size: 72px;
   color: #ffffff; }
 
 .carte-accord {
@@ -406,13 +406,13 @@ a {
   transform: translateY(-50%) rotate(-90deg);
   white-space: nowrap;
   font-family: Gagalin;
-  font-size: rem(40px);
+  font-size: 40px;
   color: #ffffff;
   text-transform: uppercase;
   transform: translateX(-35%) rotate(-90deg); }
 
 .carte-accord__link {
-  width: rem(80px);
+  width: 80px;
   height: 100%;
   display: block;
   position: relative;
@@ -429,8 +429,8 @@ a {
   box-sizing: border-box; }
 
 .carte-accord__link-active {
-  width: rem(540px);
-  padding: rem(80px 35px); }
+  width: 540px;
+  padding: 80px 35px; }
 
 .form {
   background: url("../images/form-bg.png");
@@ -589,7 +589,7 @@ a {
 .map {
   background: url("../images/map-bg.png");
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 650px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -597,9 +597,19 @@ a {
 
 .footer {
   position: absolute;
+  width: 100%;
+  min-height: 50px;
+  bottom: 0;
+  background: url(../images/footer-bg.png);
+  background-size: cover;
+  bottom: 0;
+  left: 0; }
+
+.footer {
+  position: absolute;
   box-sizing: border-box;
   width: 100%;
-  padding-top: rem(10px);
+  padding-top: 10px;
   bottom: 0; }
 
 .footer__conteiner {
@@ -626,17 +636,17 @@ a {
 
 .social__link {
   display: inline-block;
-  width: rem(20px);
-  height: rem(20px);
+  width: 100%;
+  height: 100%;
   opacity: 0.3; }
 
 .social__link:hover {
   opacity: 1; }
 
-.social__icons {
+.social__link-icons {
   fill: #ffffff;
-  width: 100%;
-  height: 100%; }
+  width: 20px;
+  height: 20px; }
 
 .info {
   display: flex;
@@ -650,24 +660,14 @@ a {
   color: white; }
 
 .info__phone-icon {
-  width: rem(12px);
-  height: rem(11px);
+  width: 12px;
+  height: 11px;
   fill: #e45028; }
 
 .info__phone-number {
   font-family: Ubuntu-Bold;
   font-size: 0.875rem;
   color: #e45028; }
-
-.footer {
-  position: absolute;
-  width: 100%;
-  min-height: 50px;
-  bottom: 0;
-  background: url(../images/footer-bg.png);
-  background-size: cover;
-  bottom: 0;
-  left: 0; }
 
 body {
   margin: 0;
@@ -679,5 +679,5 @@ body {
   overflow: hidden; }
 
 .container {
-  max-width: rem(1100) px;
+  max-width: 1100px;
   margin: 0 auto; }

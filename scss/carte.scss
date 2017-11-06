@@ -1,7 +1,7 @@
 .carte{
     background: url("../images/carte.png");
     height: 100vh;
-    min-height: rem(650px);
+    min-height: 650px;
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative;
@@ -9,11 +9,11 @@
 
 .section__title{
     position: absolute;
-    top: rem(100px);
-    left: ren(95px);
+    top: 100px;
+    left: 95px;
     margin: 0;
     font-family: Gagalin, sans-serif;
-    font-size: rem(72px);
+    font-size: 72px;
     color: #ffffff;
 }
 
@@ -52,14 +52,14 @@
     transform: translateY(-50%) rotate(-90deg);
     white-space: nowrap;
     font-family: Gagalin;
-    font-size: rem(40px);
+    font-size: 40px;
     color: #ffffff;
     text-transform: uppercase;
     transform: translateX(-35%) rotate(-90deg);
 }
 
 .carte-accord__link{
-    width: rem(80px);
+    width: 80px;
     height: 100%;
     display: block;
     position: relative;
@@ -78,6 +78,6 @@
 }
 
 .carte-accord__link-active{
-    width: rem(540px);
-    padding: rem(80px 35px);
+    width: 540px;
+    padding: 80px 35px;
 }
