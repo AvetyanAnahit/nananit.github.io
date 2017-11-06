@@ -1,0 +1,83 @@
+.carte{
+    background: url("../images/carte.png");
+    height: 100vh;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+
+.section__title{
+    position: absolute;
+    top: 100px;
+    left: 95px;
+    margin: 0;
+    font-family: Gagalin, sans-serif;
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.carte-accord{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carte-accord__description{
+    width: 0;
+    overflow: hidden;
+}
+
+.carte-accord__item .carte-accord__link{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.carte-accord__item{
+    height: 100%;
+    display: flex;
+}
+
+.carte-accord__title{
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    white-space: nowrap;
+    font-family: Gagalin;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transform: translateX(-35%) rotate(-90deg);
+}
+
+.carte-accord__link{
+    width: 80px;
+    height: 100%;
+    display: block;
+    position: relative;
+    background: no-repeat center/cover;
+}
+
+.carte-accord__link::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;   
+}
+
+.carte-accord__link-active{
+    width: 540px;
+    padding: 80px 35px;
+}
