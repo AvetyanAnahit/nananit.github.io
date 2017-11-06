@@ -1,4 +1,3 @@
-@import "normalize";
 @import "header";
 @import "fonts";
 @import "navigation";
@@ -9,9 +8,26 @@
 @import "burgers";
 @import "team";
 @import "carte";
-@import "form";
+@import "form"; 
 @import "map";
 @import "footer";
+
+$desktop-width: 1200px;
+
+$tablet-width: 768px;
+$phone-width: 320px;
+
+@mixin tablet {
+  @media (min-width: #{480px}) and (max-width: #{$desktop-width - 1px}) {
+ 
+  }
+}
+
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{480px - 1px}) {
+    @content;
+  }
+}
  
   
 body {
@@ -27,4 +43,7 @@ body {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  
+  @include tablet;
  }
+
