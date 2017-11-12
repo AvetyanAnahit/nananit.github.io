@@ -1,16 +1,15 @@
-
 .header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 2vh;
-  width: 940px;
+  width: 58.75rem;
   margin: 0 auto; }
 
 .logo {
-  width: 93px;
-  height: 68px; }
+  width: 5.8125rem;
+  height: 4.25rem; }
 
 .logo-image {
   height: 100%;
@@ -22,7 +21,39 @@
   font-size: 13px;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 25px; }
+  margin-top: 25px; 
+ 
+  @include tablet {
+   display: none;
+   
+  }
+
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+  @include tablet {
+    display:flex;
+    
+   }
+  
+}
+
+.hamburger__line{
+  width: 1.5rem;
+  height: 0.3125rem;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 0.125rem;
+  margin: 0.25rem 0 0 1.5625rem;
+  
+  @include tablet {
+    display:flex;
+  }
+}
 
 .menu-item:first-child {
   list-style-type: none; }
@@ -32,25 +63,38 @@
 
 .menu-item {
   justify-content: space-between;
-  margin-right: 33px; }
+  margin-right: 2.0625rem; }
 
 a {
   text-decoration: none;
   color: #ffffff; }
 
 .order {
-  width: 96px;
-  height: 33px;
-  border-radius: 3px;
+  width: 6rem;
+  height: 2.0625rem;
+  border-radius: 0.1875rem;
   background-color: #e45028;
   font-family: "Ubuntu-Medium";
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   color: #f0f2f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px; }
+  padding: 0.3125rem;
+  box-sizing: border-box;
+  margin-right: 5rem;
+  margin-top: 1.875rem;
+
+  
+  @include tablet {
+    padding: 0.7em 0.625rem;
+    display: flex;
+    margin-left: 45%;
+}
+ 
+
+}
 
 .order:hover {
   opacity: 0.9; 
