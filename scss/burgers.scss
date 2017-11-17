@@ -1,7 +1,185 @@
 
 .burgers{
   height: 100vh;
-  min-height: 650px;
-  background-color: #f9b43b;
+  min-height: 40.625rem;
+  background: linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-size: cover; 
+
+  @include tablet {
+    height: 100%;
+    min-height: 100vmax;
+    
+  }
+}
+
+.container__burgers{
+  
+  display: flex;
+  align-items: center;
+
+
+  @include tablet {
+    padding: 0 4.125rem;
+    margin-bottom: 10.375rem;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+.burgers__img{
+  width: 100%;
+
+  @include tablet{
+    width: 100%;
+  }
+}
+
+.burgers__sliders{
+  flex-basis: 10%;
+  min-width: 20px;
+
+  @include tablet {
+   flex-basis: 15%;
+  }
+}
+
+.burgers__sliders-scroll{
+  fill: #ffffff;
+}
+
+
+.burgers__sliders-left{
+  right: 0;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+
+.burgers__sliders-right{
+  right: 0;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.burgers__consist{
+top: -3.4375rem;
+left: 1.375rem;
+width: 5.625rem;
+height: 5.625rem;
+border-radius: 0.4375rem;
+background: #f08c33;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.burgers__consist-link{
+  width: 3.75rem;
+  height: 3.75rem;
+  fill: #ffffff;
+
+  @include tablet {
+
+  }
+}
+
+
+.burgers__consist-text{
+  font-family: Gagalin;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.dark__burger{
+  font-family: Gagalin;
+  font-size: 4.5rem;
+  color: #ffffff;
+
+  @include tablet{
+    width: 80%;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 4.4375rem;
+  }
+}
+
+.burgers__kkal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  color: #f8cf9d;
+  width: 5.625rem;
+  height: 5.625rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgers__kkal-1200{
+  font-family: Gagalin;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 2.1875rem;
+}
+
+
+.burgers__kkal-link{
+  width: 3.75rem;
+  height: 3.75rem;
+  fill: #f8cf9d;
+}
+
+.burgers__kkal-total{
+  font-family: Gagalin;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 4.3rem;
+}
+
+
+.burgers__script{
+  font-family: Ubuntu-Light;
+  font-size: 0.875rem;
+  color: #ffffff;
+  
+ 
+}
+
+.burgers__description{
+  @include tablet{
+    width: 100%;
+    text-align: center;
+   
+  }
+}
+
+.burgers__order{
+  font-family: Gagalin;
+  font-size: 4.5rem;
+  color: #e35028;
+  display: inline-flex;
+
+  @include tablet {
+    font-size: 4.4375rem;
+  }
+}
+
+.burgers__order-button{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 2.5rem;
+  margin-left: 1.5625rem;
+}
+
+.burgers__order-button{
+  font-family: Ubuntu-Medium;
+  font-size: 0.8125rem;
+  text-align: center;
+  color: #ffffff;
+  width: 5.125rem;
+  height: 1.1875rem;
+  border-radius: 0.3125rem;
+  background-color: #e35028;
 }
