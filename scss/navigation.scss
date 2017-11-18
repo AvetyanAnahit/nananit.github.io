@@ -1,4 +1,4 @@
-.nav {
+.onepage-scrollonepage-scroll {
   position: fixed;
   list-style-type: none;
   right: 3.125rem;
@@ -7,14 +7,14 @@
   padding: 0;
   z-index: 200; }
 
-.nav-item {
+.onepage-scroll-item {
   position: relative;
   width: 0.375rem;
   height: 0.375rem;
   margin-top: 0.625rem;
   color: #fff; }
 
-.nav-link {
+.onepage-scroll-link {
   width: 0.375rem;
   height: 0.375rem;
   background: #fff;
@@ -22,7 +22,7 @@
   display: inline-block;
   border: 0.0625rem solid transparent; }
 
-.nav-item:hover::after {
+.onepage-scroll-item:hover::after {
   content: '';
   display: inline-block;
   width: 1rem;

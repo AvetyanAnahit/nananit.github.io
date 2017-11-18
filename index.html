@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/onepage-scroll.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>BurgerLand</title>
 </head>
 <body>
    <div class="wrapper">
+        <!--header, menu, hamburger-->
         <section class="first-page">
                 <div class="header">
                     <div class="logo header-logo">
@@ -38,16 +40,16 @@
                 </div>
             <div class="container">
                
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
-                        <li class="nav-item"><a href="#" class="nav-item__link"></a></li>
+                <nav class="onepage-scroll">
+                    <ul class="onepage-scroll-list">
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
+                        <li class="onepage-scroll-item"><a href="#" class="onepage-scroll-item__link"></a></li>
                     </ul>
                 </nav>
                 <div class="presentation">
@@ -65,7 +67,7 @@
             <div class="arrow">
                     <a href="#"> <img src="images/arrow-scroll.png" alt=""></a>
             </div>
-        </section>
+        </section> 
 
         <!--we-->
         <section class="statement">  
@@ -97,7 +99,7 @@
            </div>
         </section>
 
-         <!--here are burgers, orange section-->
+         <!--here is burgers, orange section-->
          <section class="burgers">
              <div class="container container__burgers">
                 <div class="burgers__sliders"> 
@@ -150,12 +152,12 @@
                             <svg viewBox="0 0 50 50" width="50" height="28">
                                 <use xlink:href="./icons/sprite.svg#arrow-scroll" class="burgers__sliders-scroll"></use>
                             </svg>
-                            </a>
+                        </a>
                       </div>
                 </div>    <!--right side-->
              </div>
-             </div>
          </section>
+
          <!--here is team section-->
          <section class="section-team">
              <div class="team">
@@ -258,6 +260,7 @@
                         </li>
             </ul>
          </section>
+
         <!--reviews-->
         <section class="reviews">
               <ul class="reviews-list">
@@ -427,6 +430,7 @@
             </div>
 
         </section>
+
         <!--here is map and footer section, don't forget about svg sprites!!!-->
         <section class="map">
             <div class="footer">
@@ -492,6 +496,13 @@
             </div>
         </section>
    </div>
+
+   <script
+   src="https://code.jquery.com/jquery-3.2.1.js"
+   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+   <script src="./js/jquery.onepage-scroll.js"></script>
+   <script src="./js/main.js"></script>
   
 </body>
 
