@@ -6,9 +6,10 @@
   width: 95%; 
 
   @include tablet {
-    padding: 0 4.125rem;
+    padding: 6.25rem 1.125rem;
     margin-bottom: 10.375rem;
-    display: table-caption;
+   flex-direction: column;
+   width: 90%;
 }
  
 }
@@ -22,7 +23,7 @@
  
   @include tablet {
     
-    width: 100%;
+    width: 95%;
     text-align: center;
     margin-top: 5rem;
   }
@@ -40,7 +41,7 @@
   margin: 0; 
 
   @include tablet{
-    width: 100%;
+    width: 95%;
     text-align: center;
    
   }

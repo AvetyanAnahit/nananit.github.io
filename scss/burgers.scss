@@ -19,7 +19,7 @@
 
 
   @include tablet {
-    padding: 0 4.125rem;
+    padding: 0 1.25rem;
     margin-bottom: 10.375rem;
     flex-direction: column;
     align-items: center;
@@ -72,6 +72,13 @@ justify-content: center;
 cursor: pointer;
 }
 
+.burgers__content{
+
+  @include tablet {
+    margin-right: 6.875rem;
+  }
+}
+
 .burgers__consist-link{
   width: 3.75rem;
   height: 3.75rem;
@@ -90,13 +97,17 @@ cursor: pointer;
   color: #ffffff;
 }
 
+@include tablet{
+  margin-right: 7.5rem;
+}
+
 .dark__burger{
   font-family: Gagalin;
   font-size: 4.5rem;
   color: #ffffff;
 
   @include tablet{
-    width: 80%;
+    width: 95%;
     text-align: center;
     margin-top: 5rem;
     font-size: 4.4375rem;
@@ -148,16 +159,15 @@ cursor: pointer;
 
 .burgers__description{
   @include tablet{
-    width: 100%;
+    width: 90%;
     text-align: center;
+    flex-direction: column;
    
   }
 }
 
 .burgers__order{
   font-family: Gagalin;
-  font-size: 4.5rem;
-  color: #e35028;
   display: inline-flex;
 
   @include tablet {
@@ -165,11 +175,28 @@ cursor: pointer;
   }
 }
 
+.burgers__order-link{
+  color: #e35028;
+}
+
+.burgers__order-price{
+    font-size: 4.5rem;
+
+  
+  @include tablet {
+    font-size: 4.4375rem;
+  }
+}
+
+.burgers__order-rub{
+  font-size: 1.875rem;
+}
+
 .burgers__order-button{
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.625rem 0.9375rem;
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
   margin-left: 1.5625rem;
 }
 
