@@ -6,7 +6,12 @@
   align-items: center;
   padding-top: 2vh;
   width: 58.75rem;
-  margin: 0 auto; }
+  margin: 0 auto; 
+
+  @include tablet {
+    width: 0;
+  }
+}
 
 .logo {
   width: 5.8125rem;
@@ -40,7 +45,7 @@
     display:flex;
     right: 18%;
     position: relative;
-    margin-top: 10px;
+    margin-top: 30px;
     
    }
   
@@ -73,7 +78,15 @@ a {
   text-decoration: none;
   color: #ffffff; }
 
-.order {
+  .order{
+    display: inline-flex;
+
+    @include tablet {
+      margin-left: 480px;
+    }
+  }
+
+.order__btn {
   width: 6rem;
   height: 2.0625rem;
   border-radius: 0.1875rem;
@@ -94,7 +107,7 @@ a {
   @include tablet {
     padding: 0.7em 0.625rem;
     display: flex;
-    margin-left: 45%;
+    
 }
  
 
