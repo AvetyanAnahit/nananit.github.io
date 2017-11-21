@@ -13,7 +13,7 @@
     }
 }
 
-.section__title{
+.carte__title{
     position: absolute;
     top: 6.25rem;
     left: 5.9375rem;
@@ -27,9 +27,13 @@
         top: 6.875rem;
         font-size: 5rem;
     }
+
+    @include phone {
+        font-size: 3.125rem;
+    }
 }
 
-.carte-accord{
+.carte-accord {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -41,29 +45,52 @@
 }
 
 
-.carte-accord__item{
+.carte-accord__item {
     height: 100%;
     padding: 0;
     display: flex;
+    cursor: pointer;
 }
 
 
-.carte-accord__item-active{
+.carte-accord__item-active .carte-accord__description{
 
     height: 100%;
     position: relative;
     width: 31.25rem;
+    padding: 0;
     background: rgba(47, 50, 52, 0.93);
     line-height: 2;
+
+    @include tablet {
+        max-width: 32.625rem;
+    }
+    @include phone {
+        max-width: 15.9375rem;;
+    }
 }
 
 
-.carte-accord__link{
+.carte-accord__item-active .carte-accord__title{
+    @include phone {
+        color: #f9b43b;
+    }
+}
+
+.carte-accord__link {
     width: 5rem;
     height: 100%;
     display: block;
     position: relative;
     background: no-repeat center/cover;
+
+    @include tablet {
+        width: 3.75rem;
+    }
+
+    @include phone {
+        width: 3.75rem;
+    }
 }
 
 
@@ -90,17 +117,16 @@
     font-size: 2.5rem;
     color: #ffffff;
     text-transform: uppercase;
-    transform: translateX(-35%) rotate(-90deg);
+    transform: translateX(-38%) rotate(-90deg);
 }
 
-.carte-accord__description{
+.carte-accord__description {
     width: 0;
     overflow: hidden;
    
 }
 
 .carte-accord__text{
-    position: absolute;
     font-family: Ubuntu-Light;
     font-size: 0.875rem;
     color: #ffffff;

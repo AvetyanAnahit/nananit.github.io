@@ -1,28 +1,27 @@
 .header {
   display: flex;
-  flex-flow: row nowrap;
-  position: absolute;
   justify-content: space-between;
   align-items: center;
   padding-top: 2vh;
-  width: 58.75rem;
-  margin: 0 auto; 
-
-  @include tablet {
-    width: 0;
-  }
+  margin: 0 auto;
 }
 
 .logo {
   width: 5.8125rem;
-  height: 4.25rem; }
+  height: 4.25rem;
+  display: flex;
+ }
 
 .logo-image {
   height: 100%;
   width: 100%; }
 
-.menu {
-  display: flex;
+  .menu {
+    margin-left: auto;
+  }
+
+.menu__content {
+  display: inline-flex;
   font-family: "Ubuntu-Medium";
   font-size: 13px;
   color: #ffffff;
@@ -34,6 +33,10 @@
    
   }
 
+  @include phone {
+    display: none;
+  }
+
 }
 
 .hamburger{
@@ -43,9 +46,13 @@
 
   @include tablet {
     display:flex;
-    right: 18%;
-    position: relative;
-    margin-top: 30px;
+    margin-top: 1.75rem;
+    
+   }
+
+   @include phone {
+    display:flex;
+    margin-top: 1.75rem;
     
    }
   
@@ -82,7 +89,7 @@ a {
     display: inline-flex;
 
     @include tablet {
-      margin-left: 480px;
+      margin-right: 3.125rem;
     }
   }
 
@@ -100,13 +107,13 @@ a {
   justify-content: center;
   padding: 0.3125rem;
   box-sizing: border-box;
-  margin-right: 5rem;
   margin-top: 1.875rem;
 
   
   @include tablet {
     padding: 0.7em 0.625rem;
     display: flex;
+    margin-right: 1.25rem;
     
 }
  

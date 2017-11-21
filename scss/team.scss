@@ -10,7 +10,7 @@
         min-height:100vmax;
     }
     @include phone {
-        height: 100%;
+        width: 100%;
     }
 }
 
@@ -24,7 +24,18 @@
     bottom: 0;
     right: 0;
     justify-content: center;
+
     @include tablet {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include phone {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -39,9 +50,16 @@
     height: 100%;
     width: 75%;
 
-    @include tablet{
+    @include tablet {
         width: 50%;
         margin-top: 7.5rem;
+
+    }
+
+    
+    @include phone {
+        width: 50%;
+       
 
     }
 }
@@ -50,6 +68,10 @@
     color: #f9b43b;
     font-family: Gagalin;
     font-size: 4.5rem;
+
+    @include phone {
+        font-size: 3.125rem;
+    }
 /*
     @include tablet{
         text-align: center;
@@ -65,16 +87,26 @@
 }
 
 
-/*.team__item{
+.team__item{
     font-family: Gagalin;
     font-size: .875rem;
     color: #f9b43b;
-}*/
+
+}
 
 .team__item_title{
     font-family: Gagalin;
     font-size: .875rem;
     color: #ffffff;
+
+    
+    @include tablet {
+        font-size: 1.5rem;
+    }
+
+    @include phone {
+        font-size: 1.5rem;
+    }
 }
 
 .team__item_title::before{
@@ -96,6 +128,12 @@
         color: #f9b43b;
     }
 }
+   
+.team__item_title-active{
+    @include phone {
+        color: #f9b43b;
+    }
+}
 
 .team__item_title-active:hover::before{
     transform: rotate(180deg) translateY(50%);
@@ -104,6 +142,13 @@
     display: flex;
 
     @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    @include phone {
         display: flex;
         flex-direction: column;
         align-items: center;

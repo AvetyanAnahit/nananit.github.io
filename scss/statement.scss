@@ -1,7 +1,16 @@
-.statement {
-  background: url("../images/bg.png") no-repeat; }
+.statement__container {
+  height: 100%;
+  max-width: 68.75rem;  
+  margin: 0 auto; 
+  padding: 0 1.25rem;
+
+  @include phone {
+    padding: 0;
+  }
+}
 
 .statement {
+  background: url("../images/bg.png") no-repeat;
   height: 100vh;
   min-height: 40.625rem;
   background-size: cover;
@@ -18,19 +27,36 @@
   font-family: Gagalin;
   font-size: 4.5rem;
   color: #2f3234;
-  margin: 4.375rem; }
+  margin: 4.375rem;
+
+   @include phone {
+     font-size: 3.125rem;
+     margin: 20px 0;
+   }
+}
 
 .statement-list {
   display: flex;
   margin-top: 5rem;
   list-style-type: none;
-  padding: 0; }
+  padding: 0; 
+   
+  @include phone {
+    display: list-item;
+    margin: 0;
+  }
+}
 
 .statement-item {
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+
+  @include phone {
+    flex-direction: inherit;
+  }
+}
 
 .statement-image {
   height: 5.9375rem; }
@@ -39,15 +65,39 @@
   height: 100%;
   width: 100%; }
 
+
+  .statement__description {
+   
+    @include phone {
+      width: 80%;
+      text-align: left;
+      margin-left: 1.25rem;
+    }
+  }
+ 
+
 .statement-title {
   font-family: Lifehack-Medium;
   font-size: 1.5063rem;
   color: #2f3234;
   text-align: center;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+ 
+  @include phone {
+    display: -webkit-box;
+  }
+}
+
 
 .statement-text {
   font-family: Ubuntu-Light;
   font-size: 0.875rem;
   color: #2f3234;
-  text-align: center; }
+  text-align: center; 
+
+  @include phone {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6
+  }
+}

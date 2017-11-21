@@ -11,6 +11,11 @@
     @include tablet {
      
     }
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
  
@@ -27,7 +32,15 @@
     height: 100%; }
    
   .footer__column {
-    flex: 1 0 0; }
+    flex: 1 0 0; 
+    
+    @include phone {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      line-height: 1.875rem;
+    }
+  }
   
   .social {
     margin: 0;
@@ -67,6 +80,13 @@
     font-size: 14px; 
     font-family: Ubuntu-Light;
     color: white; }
+
+.info__phone{
+  @include phone {
+    display: flex;
+    justify-content: center;
+  }
+}
 
    
 .info__phone-icon {

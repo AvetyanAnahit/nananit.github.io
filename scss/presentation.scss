@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 95%; 
-  padding: 10rem 0;
+  padding: 6rem 0;
 
   @include tablet {
     padding: 6.25rem 1.125rem;
@@ -12,6 +12,13 @@
    flex-direction: column;
    width: 90%;
 }
+
+  @include phone {
+    padding: 6.25rem 1.125rem;
+    margin-bottom: 10.375rem;
+    flex-direction: column;
+    width: 90%;
+  }
  
 }
 
@@ -19,12 +26,19 @@
  
   display: flex;
   justify-content: center;
-  width: 29.6875rem;
+  width: 26.6875rem;
   height: 25rem;
  
   @include tablet {
     
     width: 95%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  @include phone {
+    
+    width: 80%;
     text-align: center;
     margin-top: 5rem;
   }
@@ -46,6 +60,12 @@
     text-align: center;
    
   }
+  
+  @include phone {
+    width: 95%;
+    text-align: center;
+   
+  }
  
 }
 
@@ -53,14 +73,25 @@
   margin: 0;
   font-family: Gagalin;
   font-size: 4.5rem;
-  color: #f9b43b; }
+  color: #f9b43b;
+
+  @include phone {
+    font-size: 3.9375rem;
+  }
+}
 
 .presentation-text__2 {
   margin: 0;
   font-family: "Lifehack-Medium";
   font-size: 4.0625rem;
   color: #ffffff;
-  line-height: 4.0625rem; }
+  line-height: 4.0625rem; 
+
+  
+  @include phone {
+    font-size: 3.375rem;
+  }
+}
 
 .arrow {
   margin: 0;
