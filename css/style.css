@@ -518,7 +518,7 @@ a {
   color: #ffffff; }
   @media (min-width: 480px) and (max-width: 768px) {
     .burgers__consist-text {
-      margin-right: 7.5rem;
+      /*margin-right: 7.5rem;*/
       font-size: 0.875rem; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .burgers__consist-text {
@@ -530,7 +530,7 @@ a {
   color: #ffffff; }
   @media (min-width: 480px) and (max-width: 768px) {
     .dark__burger {
-      width: 88%;
+      /*width: 85%;*/
       text-align: center;
       margin-top: 5rem;
       font-size: 4.4375rem; } }
@@ -560,7 +560,7 @@ a {
   @media (min-width: 320px) and (max-width: 480px) {
     .burgers__kkal {
       position: absolute;
-      top: 0;
+      top: 1.875rem;
       right: 0; } }
 
 .burgers__kkal-1200 {
@@ -599,7 +599,7 @@ a {
 
 @media (min-width: 480px) and (max-width: 768px) {
   .burgers__description {
-    width: 90%;
+    width: 75%;
     text-align: center;
     flex-direction: column; } }
 

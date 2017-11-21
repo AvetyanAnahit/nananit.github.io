@@ -134,7 +134,7 @@ cursor: pointer;
 
 
 @include tablet{
-  margin-right: 7.5rem;
+  /*margin-right: 7.5rem;*/
   font-size:  0.875rem;
 }
 
@@ -150,7 +150,7 @@ cursor: pointer;
   color: #ffffff;
 
   @include tablet{
-    width: 88%;
+    /*width: 85%;*/
     text-align: center;
     margin-top: 5rem;
     font-size: 4.4375rem;
@@ -185,7 +185,7 @@ cursor: pointer;
   
   @include phone {
     position: absolute;
-    top: 0;
+    top: 1.875rem;
     right: 0;
   }
 }
@@ -238,7 +238,7 @@ cursor: pointer;
 
 .burgers__description{
   @include tablet{
-    width: 90%;
+    width: 75%;
     text-align: center;
     flex-direction: column;
    
