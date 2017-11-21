@@ -65,6 +65,8 @@
 .burgers__sliders{
   flex-basis: 10%;
   min-width: 20px;
+  position: absolute;
+  display: flex;
 
   @include tablet {
    flex-basis: 15%;
@@ -307,7 +309,7 @@ cursor: pointer;
 }
 
 .burgers__order-button-link {
-  margin-top: 3.4375rem;
+  margin-top: 2.4375rem;
 
   @include tablet {
     margin-top: 0;
