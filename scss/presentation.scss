@@ -38,12 +38,16 @@
 
   @include phone {
     
-    width: 80%;
+    width: 95%;
     text-align: center;
     margin-top: 5rem;
   }
  
-  
+  .presentation-img-picture{
+    @include phone {
+      width: 100%;
+    }
+  }
   
 }
 

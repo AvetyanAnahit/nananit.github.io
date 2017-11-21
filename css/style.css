@@ -190,9 +190,12 @@ a {
       margin-top: 5rem; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .presentation-img {
-      width: 80%;
+      width: 95%;
       text-align: center;
       margin-top: 5rem; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .presentation-img .presentation-img-picture {
+      width: 100%; } }
 
 .presentation-text {
   display: flex;
@@ -455,6 +458,11 @@ a {
     .burgers__img {
       width: 95%;
       margin-left: 5%; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .burgers__img-picture {
+    width: 100%;
+    margin-left: 1.875rem; } }
 
 .burgers__sliders {
   flex-basis: 10%;
@@ -917,6 +925,10 @@ a {
   @media (min-width: 480px) and (max-width: 768px) {
     .feedback {
       height: 100%; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 90%; } }
 
 .form__header {
   font-family: Gagalin;

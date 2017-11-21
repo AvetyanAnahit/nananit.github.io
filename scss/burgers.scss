@@ -41,7 +41,7 @@
 }
 
 .burgers__img{
-  width: 100%;
+  width: 100%; 
 
   @include tablet{
     width: 95%;
@@ -53,6 +53,13 @@
     width: 95%;
     margin-left: 5%;
   }
+}
+
+.burgers__img-picture{
+   @include phone {
+     width: 100%;
+     margin-left: 1.875rem;
+   }
 }
 
 .burgers__sliders{
