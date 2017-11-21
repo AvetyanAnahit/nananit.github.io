@@ -277,6 +277,9 @@ a {
     .statement {
       min-height: 100vmax;
       height: 100%; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .statement {
+      background: url("../images/bg1.png") no-repeat; } }
 
 .statement-header {
   text-align: center;
@@ -502,11 +505,13 @@ a {
 
 @media (min-width: 480px) and (max-width: 768px) {
   .burgers__content {
-    margin-right: 6.875rem; } }
+    margin-right: 6.875rem;
+    margin-top: 8.4375rem; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .burgers__content {
-    margin-right: 6.875rem; } }
+    margin-right: 6.875rem;
+    margin-top: 3.125rem; } }
 
 .burgers__consist-link {
   width: 3.75rem;
@@ -558,11 +563,12 @@ a {
     .burgers__kkal {
       position: absolute;
       top: 0;
-      right: 0; } }
+      right: 0;
+      margin-top: 125px; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .burgers__kkal {
       position: absolute;
-      top: 1.875rem;
+      top: 2.875rem;
       right: 0; } }
 
 .burgers__kkal-1200 {
@@ -944,7 +950,8 @@ a {
       font-size: 4.28571rem; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .form__header {
-      font-size: 3.125rem; } }
+      font-size: 3.125rem;
+      padding: 3.75rem; } }
 
 .form__group {
   display: flex; }
@@ -1242,5 +1249,4 @@ body {
       padding: 0; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .container {
-      width: 95%;
       min-height: 100%; } }

@@ -20,6 +20,9 @@
     min-height: 100vmax;
     height: 100%;
   }
+  @include phone {
+    background: url("../images/bg1.png") no-repeat;
+  }
 }
 
 .statement-header {

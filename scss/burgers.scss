@@ -110,10 +110,12 @@ cursor: pointer;
 
   @include tablet {
     margin-right: 6.875rem;
+    margin-top: 8.4375rem;
   }
 
   @include phone {
     margin-right: 6.875rem;
+    margin-top: 3.125rem;
   }
 }
 
@@ -182,12 +184,13 @@ cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 125px;
   }
 
   
   @include phone {
     position: absolute;
-    top: 1.875rem;
+    top: 2.875rem;
     right: 0;
   }
 }
