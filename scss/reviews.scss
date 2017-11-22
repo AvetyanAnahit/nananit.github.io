@@ -2,6 +2,10 @@
   height: 100vh;
   min-height: 40.625rem;
 
+  @include phone {
+    height: 50vh;
+  }
+
 }
 
 .reviews-list {

@@ -173,8 +173,8 @@ a {
       width: 90%; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .presentation {
-      padding: 6.25rem 1.125rem;
-      margin-bottom: 10.375rem;
+      padding: 2.25rem 1.125rem;
+      margin-bottom: 1.375rem;
       flex-direction: column;
       width: 90%; } }
 
@@ -254,7 +254,7 @@ a {
       min-height: 100vmax; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .first-page {
-      height: 100%; } }
+      height: 60vh; } }
 
 .statement__container {
   height: 100%;
@@ -281,7 +281,8 @@ a {
       background: url("../images/bg1.png") no-repeat;
       background-size: cover;
       box-sizing: border-box;
-      padding-top: 6.875rem; } }
+      padding-top: 6.875rem;
+      height: auto; } }
 
 .statement-header {
   text-align: center;
@@ -351,6 +352,9 @@ a {
 .reviews {
   height: 100vh;
   min-height: 40.625rem; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .reviews {
+      height: 50vh; } }
 
 .reviews-list {
   margin: 0;
@@ -685,7 +689,7 @@ a {
   @media (min-width: 320px) and (max-width: 480px) {
     .section-team {
       width: 100%;
-      min-height: 50rem; } }
+      height: 60vh; } }
   .section-team .team {
     width: 50%;
     height: 100%;
@@ -927,7 +931,7 @@ a {
   background-size: cover; }
   @media (min-width: 480px) and (max-width: 768px) {
     .feedback {
-      height: 100%; } }
+      height: 60vh; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .feedback {
       height: 100%; } }
@@ -961,7 +965,11 @@ a {
       margin: 0 auto; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .form__group {
-      flex-direction: column; } }
+      width: 100%;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-bottom: 60px;
+      box-sizing: border-box; } }
 
 .form__column {
   flex: 1 0 50%;
