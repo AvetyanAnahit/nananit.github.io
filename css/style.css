@@ -278,7 +278,10 @@ a {
       height: 100%; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .statement {
-      background: url("../images/bg1.png") no-repeat; } }
+      background: url("../images/bg1.png") no-repeat;
+      background-size: cover;
+      box-sizing: border-box;
+      padding-top: 6.875rem; } }
 
 .statement-header {
   text-align: center;
@@ -432,7 +435,6 @@ a {
   @media (min-width: 320px) and (max-width: 480px) {
     .burgers {
       height: 100%;
-      min-height: 100vmax;
       position: relative; } }
 
 .container__burgers {

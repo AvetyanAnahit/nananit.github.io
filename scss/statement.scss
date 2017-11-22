@@ -22,6 +22,9 @@
   }
   @include phone {
     background: url("../images/bg1.png") no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 6.875rem;
   }
 }
 
