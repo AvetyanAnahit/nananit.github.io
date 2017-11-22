@@ -9,11 +9,16 @@
     @include tablet {
       height: 100%;
     }
+
+    @include phone {
+      height: 100%;
+    }
   }
 
   .container {
     @include phone {
       width: 90%;
+      min-height: 50rem;
     }
   }
   

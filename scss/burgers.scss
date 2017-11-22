@@ -1,7 +1,6 @@
 
 .burgers{
   height: 100vh;
-  min-height: 40.625rem;
   background: linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-size: cover; 
 
@@ -62,20 +61,6 @@
    }
 }
 
-.burgers__sliders{
-  flex-basis: 10%;
-  min-width: 20px;
-  position: absolute;
-  display: flex;
-
-  @include tablet {
-   flex-basis: 15%;
-  }
-
-  @include phone {
-    flex-basis: 15%;
-   }
-}
 
 .burgers__sliders-scroll{
   fill: #ffffff;
@@ -83,15 +68,38 @@
 
 
 .burgers__sliders-left{
-  right: 0;
+  position: absolute;
+  left: 0;
   transform: translateY(-50%) rotate(90deg);
+
+    @include tablet 
+    {
+      top: 50%;
+    }
+
+    @include phone {
+      top: 50%;
+    }
 }
 
 
 .burgers__sliders-right{
+  position: absolute;
   right: 0;
   transform: translateY(-50%) rotate(-90deg);
+
+  
+  @include tablet 
+  {
+    top: 50%;
+  }
+
+  @include phone {
+    top: 50%;
+  }
 }
+
+
 .burgers__consist{
 top: -3.4375rem;
 left: 1.375rem;

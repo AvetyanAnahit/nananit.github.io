@@ -34,7 +34,7 @@ html {
     font-size: 14px;
   }
 }
- 
+   
    
 body {
   margin: 0;
@@ -62,7 +62,7 @@ body {
    
   }
   @include phone{
- 
+    min-width: 320px;
     min-height: 100%;
   }
  } 

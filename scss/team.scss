@@ -11,7 +11,7 @@
     }
     @include phone {
         width: 100%;
-    }
+        min-height: 50rem;
 }
 
 .team{
@@ -175,8 +175,9 @@
     
 }
 
-.team__text-title{
+
+.team__text-title {
     font-family: Ubuntu-Bold;
     font-size: .875rem;
     color: #ffffff;
-}
+}   }
