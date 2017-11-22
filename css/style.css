@@ -537,7 +537,8 @@ a {
 .dark__burger {
   font-family: Gagalin;
   font-size: 4.5rem;
-  color: #ffffff; }
+  color: #ffffff;
+  margin: 1.25rem; }
   @media (min-width: 480px) and (max-width: 768px) {
     .dark__burger {
       /*width: 85%;*/
