@@ -72,7 +72,7 @@
   .statement__description {
    
     @include phone {
-      width: 80%;
+      width: 85%;
       text-align: left;
       margin-left: 1.25rem;
     }
@@ -88,6 +88,7 @@
  
   @include phone {
     display: -webkit-box;
+    text-align: -webkit-left;
   }
 }
 

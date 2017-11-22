@@ -319,7 +319,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .statement__description {
-    width: 80%;
+    width: 85%;
     text-align: left;
     margin-left: 1.25rem; } }
 
@@ -331,7 +331,8 @@ a {
   margin-bottom: 1.25rem; }
   @media (min-width: 320px) and (max-width: 480px) {
     .statement-title {
-      display: -webkit-box; } }
+      display: -webkit-box;
+      text-align: -webkit-left; } }
 
 .statement-text {
   font-family: Ubuntu-Light;
@@ -1247,5 +1248,4 @@ body {
       padding: 0; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .container {
-      min-width: 320px;
       min-height: 100%; } }
