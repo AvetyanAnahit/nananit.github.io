@@ -39,7 +39,7 @@
 
 }
 
-.hamburger{
+.menu__hamburger{
   display: flex;
   flex-direction: column;
   display: none;
@@ -58,7 +58,7 @@
   
 }
 
-.hamburger__line{
+.menu__hamburger__line{
   width: 1.5rem;
   height: 0.3125rem;
   background: #ffffff;
@@ -68,6 +68,25 @@
   
   @include tablet {
     display:flex;
+  }
+}
+
+
+.menu__hamburger_active .menu__hamburger__line:nth-child(2n+0){
+  opacity:0;
+}
+.menu__hamburger_active .menu__hamburger__line:nth-child(1n+0){
+          transform: rotate(45deg) translateY(11px);
+}
+.menu__hamburger_active .menu__hamburger__line:nth-child(3n+0){
+      transform: rotate(-45deg) translateY(-11px);
+}
+
+.maburger-list-active{
+  display: none;
+
+  @include tablet {
+    display: flex;
   }
 }
 

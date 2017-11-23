@@ -1,12 +1,13 @@
 
 .burgers{
+  min-height: 40.625rem;
   height: 100vh;
   background: linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-size: cover; 
 
   @include tablet {
     height: 100%;
-    min-height: 100vmax;
+    min-height: 100wh;
     position: relative;
     
   } 
@@ -275,8 +276,8 @@ cursor: pointer;
 
   
   @include phone {
-    font-size: 4.4375rem;
-    display: -webkit-inline-box;  
+    display: -webkit-inline-box; 
+    margin-bottom: 20px; 
   }
 }
 
@@ -292,7 +293,7 @@ cursor: pointer;
   }
 
   @include phone {
-    font-size: 4.4375rem;
+    font-size: 3.4375rem;
   }
  
 }
@@ -326,8 +327,5 @@ cursor: pointer;
     margin-top: 0;
   }
 
-  
-  @include phone {
-    margin-top: 0;
-  }
+ 
 }

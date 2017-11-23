@@ -6,6 +6,8 @@
 
   @include phone {
     padding: 0;
+    
+
   }
 }
 
@@ -22,7 +24,7 @@
   }
   @include phone {
     background: url("../images/bg1.png") no-repeat;
-    background-size: cover;
+    background-size: inherit;
     box-sizing: border-box;
     padding-top: 6.875rem;
     height: auto;

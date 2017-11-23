@@ -83,6 +83,9 @@
   width: 6.875rem;
   height: .875rem; 
 
+  @include tablet {
+    margin-left: 8.125rem;
+  }
 
   @include phone {
     margin-top: 1.5625rem;
