@@ -114,6 +114,73 @@ justify-content: center;
 cursor: pointer;
 }
 
+.burgers__consist:hover  {
+ background: #e35028;
+}
+
+.burgers__consist:hover + .burgers__consist-details {
+  display: block;
+}
+.burgers__consist-details {
+  display: none;
+  position: absolute;
+  background-color: rgba(254, 248, 236, 0.9);
+  width: 20.0625rem;
+  height: 20.8125rem;
+  border-radius: 0.25rem;
+  left: 7.0625rem;
+  margin-top: -5.4375rem;
+
+  @include tablet {
+    width: 15.0625rem;
+    height: 19.8125rem;
+    left: 11.0625rem;
+    margin-top: -5.6375rem;
+  }
+
+  @include phone {
+    width: 15.0625rem;
+    height: 20.8125rem;
+    left: 6.1875rem;
+    margin-top: -4.8125rem;
+    z-index: 999;
+  }
+}
+
+.burgers__consist-details-list{
+  list-style-type: none;
+  padding: 0;
+  padding-right: 3.875rem;
+}
+
+.burgers__consist-details-item{
+ 
+  display: flex;
+  justify-content: space-around;
+  }
+
+  .burgers__consist-details-img1-link {
+    fill: #e25028;
+  }
+  .burgers__consist-details-img3-link {
+   fill: #8ac03e;
+  }
+
+  .burgers__consist-details-img2-link {
+    fill: #f6bf5c;
+  }
+
+  .burgers__consist-details-name {
+    font-family: Ubuntu-Medium;
+    font-size: 0.875rem;
+  }
+
+  .burgers__consist-details-weight {
+    font-family: Ubuntu-Light;
+    font-size: 0.875rem;
+  }
+
+
 .burgers__content{
 
   @include tablet {

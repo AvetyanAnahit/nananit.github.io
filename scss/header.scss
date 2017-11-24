@@ -10,6 +10,7 @@
   width: 5.8125rem;
   height: 4.25rem;
   display: flex;
+  z-index: 999;
  }
 
 .logo-image {
@@ -76,10 +77,10 @@
   opacity:0;
 }
 .menu__hamburger_active .menu__hamburger__line:nth-child(1n+0){
-          transform: rotate(45deg) translateY(11px);
+          transform: rotate(45deg) translateY(12px);
 }
 .menu__hamburger_active .menu__hamburger__line:nth-child(3n+0){
-      transform: rotate(-45deg) translateY(-11px);
+      transform: rotate(-45deg) translateY(-12px);
 }
 
 .maburger-list-active{
