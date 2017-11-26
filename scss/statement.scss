@@ -28,6 +28,7 @@
     box-sizing: border-box;
     padding-top: 6.875rem;
     height: auto;
+    padding-top: 0;
   }
 }
 
@@ -39,7 +40,7 @@
   margin: 4.375rem;
 
    @include phone {
-     font-size: 3.125rem;
+     font-size: 2.125rem;
      margin: 20px 0;
    }
 }
@@ -68,7 +69,7 @@
 }
 
 .statement-image {
-  height: 5.9375rem; }
+  height: 3.9375rem; }
 
 .statement-pic {
   height: 100%;
@@ -95,6 +96,8 @@
   @include phone {
     display: -webkit-box;
     text-align: -webkit-left;
+    font-style: 1.3rem;
+
   }
 }
 
@@ -107,7 +110,7 @@
 
   @include phone {
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.6
   }
 }

@@ -230,7 +230,6 @@ cursor: pointer;
   margin: 1.25rem;
 
   @include tablet{
-    /*width: 85%;*/
     text-align: center;
     margin-top: 5rem;
     font-size: 4.4375rem;
@@ -240,7 +239,7 @@ cursor: pointer;
     width: 88%;
     text-align: center;
     margin-top: 5rem;
-    font-size: 3.125rem;
+    font-size: 2.125rem;
   }
 }
 
@@ -311,7 +310,7 @@ cursor: pointer;
 
 .burgers__script{
   font-family: Ubuntu-Light;
-  font-size: 0.875rem;
+  font-size: 0.675rem;
   color: #ffffff;
   
  

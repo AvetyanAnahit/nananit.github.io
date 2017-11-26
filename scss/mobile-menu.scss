@@ -16,14 +16,17 @@
     align-items: center;
     -webkit-box-pack: center;
 
-
+    &.active {
+        display: flex;
+    }
 
     @include tablet {
         display: none;
     }
 
     @include phone {
-        display: flex;
+        display: none;
+        line-height: 50px;
 
     }
 }
@@ -32,6 +35,10 @@
     list-style-type: none;
     text-align: center;
     margin-left: 37%;
+
+    @include phone {
+        margin-left: 32%;
+    }
 }
 
 .mobile-menu-item {
@@ -43,6 +50,10 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: Ubuntu;
+
+    @include phone {
+        margin: 0;
+    }
 }
 
 
@@ -57,9 +68,7 @@
     background-color: #ffffff;
 }
 
-.menu__hamburger:hover + .mobile-menu__content {
-    background: aquamarine;
-}
+
 
 
 

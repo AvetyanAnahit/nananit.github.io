@@ -40,6 +40,16 @@
 
 }
 
+.menu__hamburgerr {
+
+  @include tablet {
+    display: flex;
+    margin-left: 75px;
+    margin-top: -28px;
+  }
+  
+}
+
 .menu__hamburger{
   display: flex;
   flex-direction: column;
@@ -47,14 +57,14 @@
 
   @include tablet {
     display:flex;
-    margin-top: 1.75rem;
+   
     
    }
 
    @include phone {
-    display:flex;
-    margin-top: 1.75rem;
-    
+    display: flex;
+    margin-top: -2rem;
+    margin-left: 4.9375rem;
    }
   
 }

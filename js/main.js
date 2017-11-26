@@ -19,13 +19,17 @@ function onePageScroll(){
 
   var menu__hamburger = document.querySelector(".menu__hamburger");
   console.log(menu__hamburger);
-  menu__hamburger.addEventListener("click", function(){
-    if(menu__hamburger.classList.contains("menu__hamburger_active")){
-  menu__hamburger.classList.remove("menu__hamburger_active");
-
-    }else{
-  menu__hamburger.classList.add("menu__hamburger_active");
-  }
-
-});
+  menu__hamburger.addEventListener("click", function() {    
+    var mobilemenu__content = document.querySelector(".mobile-menu__content");
+    console.log(mobilemenu__content.classList, 'mobilemenu__content.classList');
+    if(menu__hamburger.classList.contains("menu__hamburger_active")) {
+      menu__hamburger.classList.remove("menu__hamburger_active");
+      mobilemenu__content.classList.remove("active");
+    } else {
+      menu__hamburger.classList.add("menu__hamburger_active");
+      mobilemenu__content.classList.add("active");
+    }
+  });
 }
+
+
