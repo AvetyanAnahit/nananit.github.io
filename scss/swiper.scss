@@ -1,0 +1,17 @@
+.swiper_container{
+    display: flex;
+}
+
+.swiper_slide{
+    list-style-type: none;
+    display: none;
+}
+
+.active{
+    display: inline-flex;
+
+
+    @include tablet{
+        display: unset;
+    }
+}

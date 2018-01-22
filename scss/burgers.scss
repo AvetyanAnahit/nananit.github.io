@@ -44,7 +44,9 @@
 
   @include tablet{
     width: 95%;
-    margin-left: 5%;
+    margin-left: 9%;
+    margin-bottom: -17%;
+    margin-top: -6%;
   }
 
   
@@ -128,7 +130,7 @@ cursor: pointer;
   width: 20.0625rem;
   height: 20.8125rem;
   border-radius: 0.25rem;
-  left: 7.0625rem;
+  left: 6.0625rem;
   margin-top: -5.4375rem;
 
   @include tablet {
@@ -182,6 +184,7 @@ cursor: pointer;
 
 
 .burgers__content{
+  position: relative;
 
   @include tablet {
     margin-right: 6.875rem;
@@ -321,6 +324,7 @@ cursor: pointer;
     width: 75%;
     text-align: center;
     flex-direction: column;
+    margin-left: 7%;
    
   }
 

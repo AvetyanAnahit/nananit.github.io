@@ -88,6 +88,9 @@
     font-family: Gagalin;
     font-size: .875rem;
     color: #f9b43b;
+    margin-top: 1.5625rem;
+
+    
     @include phone {
     font-size: .125rem;
     }
@@ -120,7 +123,7 @@
     transform: translateY(-50%);
 }
 
-.team__item_title-active:hover{
+.team__item_title:hover{
     color: #f9b43b;
 
     @include tablet {
@@ -128,17 +131,22 @@
     }
 }
    
-.team__item_title-active{
+.team__item_title{
     @include phone {
         color: #f9b43b;
     }
 }
 
-.team__item_title-active:hover::before{
+.team__item_title:hover::before{
     transform: rotate(180deg) translateY(50%);
 }
-.team__description{
+
+.team__description.active {
     display: flex;
+}
+
+.team__description{
+    display: none;
 
     @include tablet {
         display: flex;

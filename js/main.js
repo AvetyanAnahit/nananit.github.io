@@ -30,6 +30,83 @@ function onePageScroll(){
       mobilemenu__content.classList.add("active");
     }
   });
-}
+};
+
+// $('.owl-carousel').owlCarousel({
+//   loop:true,
+//   margin:10,
+//   nav:true,
+//   responsive:{
+//       0:{
+//           items:1
+//       },
+//       600:{
+//           items:3
+//       },
+//       1000:{
+//           items:5
+//       }
+//   }
+// })
+
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel();
+// });
 
 
+
+var acc = document.getElementsByClassName("team__item_title");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.nextElementSibling.classList.toggle("active");
+   console.log(this);
+   console.log( this.nextElementSibling);
+  });
+};
+
+
+// $(function () {
+//   $('.burgers__sliders-left').on('click', function(e){
+//     e.preventDefault();
+
+//     var $this = $(this),
+//     swiper = $this.closest('.swiper'),
+//          items = swiper.find('swiper_slide'),
+//          activeSlide = items.filter('active'),
+//          reqItem = activeSlide.next(),
+//          reqIndex = reqItem.index(),
+//          list = swiper.find('.swiper_slide'),
+//          duration = 500;
+
+//      list.animate({
+//        'left' : -reqIndex * 100 + '%'
+//      }, duration);  
+
+//   });
+
+// });
+  
+
+
+//   var $this = $(this),
+//       container__burgers = $this.closet('.swiper'),
+//       items = $('.swiper_slide',container__burgers),
+//       activeItem = items.filter('.active'),
+//       existedItem, edgeItem, reqItem;
+
+//   if ($this.hasClass('burgers__sliders-right')){
+//       existedItem = activeItem.next();
+//       edgeItem = items.first();
+//   }
+
+//   if ($this.hasClass('burgers__sliders-left')) {
+//     existedItem = activeItem.prev();
+//     edgeItem = items.last();
+
+//     reqItem = existedItem.length ? existedItem.index() : edgeItem.index();
+
+//     moveSlide(container__burgers, reqItem);
+//   }
+// });
