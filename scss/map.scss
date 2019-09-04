@@ -1,10 +1,18 @@
 .map{
     background: url("../images/map-bg.png");
     height: 100vh;
-    min-height: 650px;
+    min-height: 40.625rem;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-}
+
+    @include tablet {
+        height: 100%;
+    }
+
+    @include phone {
+        height: 100%;
+    }
+} 
  

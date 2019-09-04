@@ -1,28 +1,105 @@
-
 .header {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 2vh;
-  width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .logo {
-  width: 93px;
-  height: 68px; }
+  width: 5.8125rem;
+  height: 4.25rem;
+  display: flex;
+  z-index: 999;
+ }
 
 .logo-image {
   height: 100%;
   width: 100%; }
 
-.menu {
-  display: flex;
+  .menu {
+    margin-left: auto;
+  }
+
+.menu__content {
+  display: inline-flex;
   font-family: "Ubuntu-Medium";
   font-size: 13px;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 25px; }
+  margin-top: 25px; 
+ 
+  @include tablet {
+   display: none;
+   
+  }
+
+  @include phone {
+    display: none;
+  }
+
+}
+
+.menu__hamburgerr {
+
+  @include tablet {
+    display: flex;
+    margin-left: 75px;
+    margin-top: -28px;
+  }
+  
+}
+
+.menu__hamburger{
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+  @include tablet {
+    display:flex;
+   
+    
+   }
+
+   @include phone {
+    display: flex;
+    margin-top: -2rem;
+    margin-left: 4.9375rem;
+   }
+  
+}
+
+.menu__hamburger__line{
+  width: 1.5rem;
+  height: 0.3125rem;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 0.125rem;
+  margin: 0.25rem 0 0 1.5625rem;
+  
+  @include tablet {
+    display:flex;
+  }
+}
+
+
+.menu__hamburger_active .menu__hamburger__line:nth-child(2n+0){
+  opacity:0;
+}
+.menu__hamburger_active .menu__hamburger__line:nth-child(1n+0){
+          transform: rotate(45deg) translateY(12px);
+}
+.menu__hamburger_active .menu__hamburger__line:nth-child(3n+0){
+      transform: rotate(-45deg) translateY(-12px);
+}
+
+.maburger-list-active{
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
 
 .menu-item:first-child {
   list-style-type: none; }
@@ -32,25 +109,46 @@
 
 .menu-item {
   justify-content: space-between;
-  margin-right: 33px; }
+  margin-right: 2.0625rem; }
 
 a {
   text-decoration: none;
   color: #ffffff; }
 
-.order {
-  width: 96px;
-  height: 33px;
-  border-radius: 3px;
+  .order{
+    display: inline-flex;
+
+    @include tablet {
+      margin-right: 3.125rem;
+    }
+  }
+
+.order__btn {
+  width: 6rem;
+  height: 2.0625rem;
+  border-radius: 0.1875rem;
   background-color: #e45028;
   font-family: "Ubuntu-Medium";
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   color: #f0f2f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px; }
+  padding: 0.3125rem;
+  box-sizing: border-box;
+  margin-top: 1.875rem;
+
+  
+  @include tablet {
+    padding: 0.7em 0.625rem;
+    display: flex;
+    margin-right: 1.25rem;
+    
+}
+ 
+
+}
 
 .order:hover {
   opacity: 0.9; 

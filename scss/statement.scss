@@ -1,47 +1,116 @@
-.statement {
-  background: url("../images/bg.png") no-repeat; }
+.statement__container {
+  height: 100%;
+  max-width: 68.75rem;  
+  margin: 0 auto; 
+  padding: 0 1.25rem;
+
+  @include phone {
+    padding: 0;
+    
+
+  }
+}
 
 .statement {
+  background: url("../images/bg.png") no-repeat;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   background-size: cover;
   display: flex;
-  align-items: center; }
+  align-items: center; 
+  @include tablet{
+    min-height: 100vmax;
+    height: 100%;
+  }
+  @include phone {
+    background: url("../images/bg1.png") no-repeat;
+    background-size: inherit;
+    box-sizing: border-box;
+    padding-top: 6.875rem;
+    height: auto;
+    padding-top: 0;
+  }
+}
 
 .statement-header {
   text-align: center;
   font-family: Gagalin;
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #2f3234;
-  margin: 0; }
+  margin: 4.375rem;
+
+   @include phone {
+     font-size: 2.125rem;
+     margin: 20px 0;
+   }
+}
 
 .statement-list {
   display: flex;
+  margin-top: 5rem;
   list-style-type: none;
-  padding: 0; }
+  padding: 0; 
+   
+  @include phone {
+    display: list-item;
+    margin: 0;
+  }
+}
 
 .statement-item {
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+
+  @include phone {
+    flex-direction: inherit;
+  }
+}
 
 .statement-image {
-  height: 95px; }
+  height: 3.9375rem; }
 
 .statement-pic {
   height: 100%;
   width: 100%; }
 
+
+  .statement__description {
+   
+    @include phone {
+      width: 85%;
+      text-align: left;
+      margin-left: 1.25rem;
+    }
+  }
+ 
+
 .statement-title {
   font-family: Lifehack-Medium;
-  font-size: 24.1px;
+  font-size: 1.5063rem;
   color: #2f3234;
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem;
+ 
+  @include phone {
+    display: -webkit-box;
+    text-align: -webkit-left;
+    font-style: 1.3rem;
+
+  }
+}
+
 
 .statement-text {
   font-family: Ubuntu-Light;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #2f3234;
-  text-align: center; }
+  text-align: center; 
+
+  @include phone {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.6
+  }
+}

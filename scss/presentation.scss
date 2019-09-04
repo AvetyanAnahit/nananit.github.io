@@ -3,35 +3,101 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  width: 960px; }
+  width: 95%; 
+  padding: 6rem 0;
+
+  @include tablet {
+    padding: 6.25rem 1.125rem;
+    margin-bottom: 10.375rem;
+   flex-direction: column;
+   width: 90%;
+}
+
+  @include phone {
+    padding: 0.25rem 1.125rem;
+    margin-bottom: 1.375rem;
+    flex-direction: column;
+    width: 90%;
+  }
+ 
+}
 
 .presentation-img {
-  background: url("../images/drops.png") 0 28px no-repeat;
+ 
   display: flex;
   justify-content: center;
-  width: 475px;
-  height: 400px; }
+  width: 26.6875rem;
+  height: 25rem;
+ 
+  @include tablet {
+    
+    width: 95%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  @include phone {
+    
+    width: 95%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+ 
+  .presentation-img-picture{
+    @include phone {
+      width: 100%;
+      height: 70%;
+    }
+  }
+  
+}
 
 .presentation-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 435px;
+  width: 27.1875rem;
   height: 100%;
-  margin: 0; }
+  margin: 0; 
+
+  @include tablet{
+    width: 95%;
+    text-align: center;
+   
+  }
+  
+  @include phone {
+    width: 95%;
+    text-align: center;
+    margin-top: 0;
+   
+  }
+ 
+}
 
 .presentation-text__1 {
   margin: 0;
   font-family: Gagalin;
-  font-size: 72px;
-  color: #f9b43b; }
+  font-size: 4.5rem;
+  color: #f9b43b;
+
+  @include phone {
+    font-size: 3.555rem;
+  }
+}
 
 .presentation-text__2 {
   margin: 0;
   font-family: "Lifehack-Medium";
-  font-size: 65px;
+  font-size: 4.0625rem;
   color: #ffffff;
-  line-height: 65px; }
+  line-height: 4.0625rem; 
+
+  
+  @include phone {
+    font-size: 2.375rem;
+  }
+}
 
 .arrow {
   margin: 0;

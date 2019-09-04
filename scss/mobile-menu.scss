@@ -1,0 +1,74 @@
+.mobile-menu__content{
+    position: fixed;
+    display: none;
+    width: 100%;
+    font-family: Ubuntu-Medium;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 100px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;;
+    background: rgba(47, 50, 52, 0.99);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+
+    &.active {
+        display: flex;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+        line-height: 50px;
+
+    }
+}
+
+.mobile-menu-list {
+    list-style-type: none;
+    text-align: center;
+    margin-left: 37%;
+
+    @include phone {
+        margin-left: 32%;
+    }
+}
+
+.mobile-menu-item {
+    display: flex; 
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+
+    @include phone {
+        margin: 0;
+    }
+}
+
+
+.mobile-menu-item::after {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
+
+
+

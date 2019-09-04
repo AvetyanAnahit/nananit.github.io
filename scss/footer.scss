@@ -1,12 +1,21 @@
 .footer{
     position: absolute;
     width: 100%;
-    min-height: 50px;
+    min-height: 3.125rem;
     bottom: 0;
     background: url(../images/footer-bg.png);
     background-size: cover;
     bottom: 0;
     left: 0;
+
+    @include tablet {
+     
+    }
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
  
@@ -14,7 +23,7 @@
     position: absolute;
     box-sizing: border-box;
     width: 100%;
-    padding-top: (10px);
+    padding-top: (0.625rem);
     bottom: 0;
    }
   
@@ -23,7 +32,15 @@
     height: 100%; }
    
   .footer__column {
-    flex: 1 0 0; }
+    flex: 1 0 0; 
+    
+    @include phone {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      line-height: 1.875rem;
+    }
+  }
   
   .social {
     margin: 0;
@@ -36,7 +53,7 @@
    
   
   .social__item {
-    margin-right: 1.25rem; }
+    margin-right: 20px; }
     .social__item:last-child {
       margin-right: 0; }
   
@@ -50,8 +67,8 @@
   
   .social__link-icons {
     fill: #ffffff;
-    width: 20px;
-    height: 20px; }
+    width: 1.25rem;
+    height: 1.25rem; }
   
   .info {
     display: flex;
@@ -60,18 +77,25 @@
   
   .info__adress {
     display: block;
-    font-size: 0.875rem; 
+    font-size: 14px; 
     font-family: Ubuntu-Light;
     color: white; }
 
+.info__phone{
+  @include phone {
+    display: flex;
+    justify-content: center;
+  }
+}
+
    
 .info__phone-icon {
-    width: 12px;
-    height: 11px;
+    width: 0.75rem;
+    height: 0.6875rem;
     fill: #e45028; }
   
   .info__phone-number {
     font-family: Ubuntu-Bold;
-    font-size:  0.875rem;
+    font-size:  14px;
     color: #e45028; }
 

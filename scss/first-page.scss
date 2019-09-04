@@ -1,9 +1,20 @@
 
 .first-page {
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   background: url("../images/video-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+
+  @include tablet {
+    height: 100%;
+    min-height: 100vmax;
+  }
+  @include phone {
+    height: 100%;
+    
+  }
 }
+
